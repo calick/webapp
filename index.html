@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>webapp sample</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <link rel="stylesheet" href="css/webapp_sample.css">
+        <link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h3>html&css&javascriptのサンプル</h3>
+        <p>■ボタンのサンプル</p>
+        <h1 id="helloworld" class="blue">Hello World!</h1>
+        <p id="sample_contents"></p>
+        <button id="buttonSample">Change Text</button>
+        <button id="buttonChangeStyle">Change Style</button>
+        <button id="button_add">Add Contents</button>
+        <p>■配列のサンプル</p>
+        <div id="fruitDiv"></div>
+        <p>■配置のサンプル</p>
+        <div class="first-section">
+            <p>first</p>
+            <p>絶対座標(半透明)
+            </p>
+        </div>
+        <div class="second-section">
+            <p>second</p>
+            <p>相対座標</p>
+            <p>margin:50px</p>
+        </div>
+        <p>third xxxxxx</p>
+        <div class="fourth-section">
+            <p>fourth</p>
+            <p>相対座標</p>
+            <p>padding: 20px</p>
+        </div>
+
+        <p>■図形を横に並べてみる</p>
+        <div id="square-blue" class="square"></div>
+        <div id="square-red" class="square"></div>
+        <div id="square-green" class="square"></div>
+        <div class="float-clear"></div>
+
+        <p>■cssファイルで読み込んだフォントを利用してみる</p>
+        <p class="font-kaushan">Welcom to Sample!!</p>
+        <p class="font-modak">Welcom to Sample!!!!!</p>
+
+        <h3>ここからjQueryのサンプル</h3>
+        <p>■この丸をクリックするとログ出力する</p>
+        <div id="circle"></div>
+        <div class="float-clear"></div>
+        <p>■この四角をクリックすると→のドキュメントを変更＆↓のiframeの中身も更新</p>
+        <div id="jquery-click-sample" class="square"></div>
+        <p id="jquery-click-sample-p">document</p>
+        <div class="float-clear"></div>
+        <iframe id="jquery-click-sample-iframe" src="./pages/test.html"></iframe>
+        <p>■hoverのサンプル</p>
+        <div id="jquery-hover-sample" class="circle"></div>
+        <div class="float-clear"></div>
+        <p id="jquery-hover-sample-p">document</p>
+        <iframe id="jquery-hover-sample-iframe" src="./pages/test.html"></iframe>
+        <p>■style変更のサンプル</p>
+        <div id="jquery-change-style" class="circle"></div>
+        <p>■フェードアウト/フェードインのサンプル</p>
+        <p id="fade-sample">fade sample</p>
+        <button id="toggle">fade in/out</button>
+        <p>■アニメーションのサンプル</p>
+        <div id="jquery-animation-sample" class="circle"></div>
+
+        <!-- embed jqueryで最新版を検索 -->
+        <!-- 基本的にはjQueryは使うつもりないが学習用 -->
+        <!-- jsファイルの中で呼ばれるので先に読み込んでおく -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- bodyの要素やその子要素ををScript内で取得している場合、すべてのHTMLを読み込んだ後で読み込み必要がある -->
+        <script type="text/javascript" src="js/webapp_sample.js"></script>
+    </body>
+</html>

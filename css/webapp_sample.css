@@ -1,0 +1,106 @@
+body {
+    background: lightsalmon;
+}
+
+/* ClassにStyleを適用する場合 */
+.blue {
+    color:#4285F4;
+}
+
+.first-section{
+    background: lightblue;
+    width:30%;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    z-index: 10;
+    opacity:0.7;
+}
+
+.second-section{
+    background: lightcoral;
+    width: 30%;
+    position: relative;
+    z-index: 1;
+    opacity: 1;
+    margin:50px;
+}
+
+
+.fourth-section{
+    background: magenta;
+    width: 50%;
+    padding: 20px;
+    /* paddingはwidthの表示領域に含めないため思ったより大きく描画されてしまったなどならないように注意 */
+}
+
+/* こっちがidに適用 */
+#circle {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-color: khaki;
+    margin:10px;
+}
+/* こっちがclassに適用 */
+.circle {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    background-color: green;
+    margin:10px;
+}
+
+.square{
+    width: 50px;
+    height: 50px;
+    margin: 30px;
+    float:left;
+    background-color: lawngreen;
+}
+
+/* idにStyleを適用する場合 */
+#square-red{
+    background-color: red;
+}
+
+#square-blue{
+    background-color: mediumblue;
+    border-color: hotpink;
+    border-style: solid double dotted dashed;
+}
+
+#square-green{
+    background-color: greenyellow;
+    border-radius: 50%;
+}
+
+.float-clear{
+    clear:both;
+}
+
+@font-face {
+    font-family: 'Kaushan Script';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    src: url(https://themes.googleusercontent.com/static/fonts/kaushanscript/v1/qx1LSqts-NtiKcLw4N03IFhlQWQpSCpzb2Peu3I-Q34.woff) format('woff');
+}
+
+.font-kaushan {
+    font-family:'Kaushan Script';
+    font-size:200%;
+}
+
+@font-face {
+    font-family: 'Modak';
+    /* font-style: normal; */
+    /* font-weight: 400; */
+    src: url(https://fonts.googleapis.com/css2?family=Modak&display=swap) format('woff');
+}
+
+.font-modak {
+    font-family:'Modak';
+    font-size:200%;
+}
+
